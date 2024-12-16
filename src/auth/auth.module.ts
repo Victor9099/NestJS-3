@@ -18,7 +18,7 @@ import { AuthController } from './auth.controller';
         return {
           secret: config.get<string>('JWT_ACCESS_TOKEN'),
           signOptions: {
-            expiresIn: ms(config.get<string>('JWT_ACCESS_EXPIRE')),
+            expiresIn: ms(config.get<string>('JWT_ACCESS_EXPIRE')) / 1000,
           },
         };
       },
