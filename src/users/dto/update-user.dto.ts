@@ -5,4 +5,4 @@ export class UpdateUserDto extends OmitType(CreateUserDto, [
   'password',
 ] as const) {
   _id: string;
-}
+} //Truyen them dieu kien id
